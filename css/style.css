@@ -1,0 +1,60 @@
+body{
+  margin-top: 30px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#logo{
+  width: 100px;
+}
+
+#product{
+  background-color: #eee;
+}
+
+.container {
+  padding: 30px;
+}
+
+footer{
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+.judul{
+  font-family: 'Lemon/Milk Regular';
+  color: #036564;
+}
+
+hr{
+  width: 250px;
+  border-top: 4px solid #036564;
+}
+
+#promo{
+  width: 250px;
+  border-top: 4px solid #036564;
+  margin: 0;
+}
+
+#login-button{
+  padding-right: 30px;
+}
+
+.row-full{
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  height: 100px;
+  margin-top: 100px;
+  left: 50%;
+ }
+
+ .bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}

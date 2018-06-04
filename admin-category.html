@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin-style.css">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+
+    <title>Predo.id | Admin Add Category</title>
+  </head>
+  <body>
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="admin-dashboard.html"><img id="logo" src="img/logo2.png"></a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+            <a href="admin-login.html"><div class="btn btn-outline-danger" style="margin-right: 10px;">Logout</div></a>
+            <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="user" style="width:30px;margin-right: 10px;" class="rounded-circle">
+            <div>
+                <label class="text-light"><strong> John Doe </strong></label>
+            </div>
+        </div>
+    </nav>
+    <!-- End top navbar -->
+
+    <!-- Side bar -->
+    <div id="side" class="sidenav bg-secondary">
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="#" style="background-color: slateblue">Add Category</a>
+        <a href="admin-product.html">Add Product</a>
+    </div>
+    <!-- End side bar -->
+
+    <!-- Content -->
+    <script>
+        function toggle(source) {
+            checkboxes = document.getElementsByName('catg');
+                for(var i=0, n=checkboxes.length;i<n;i++) {
+                checkboxes[i].checked = source.checked;
+            }
+        }
+    </script>
+    <div class="container table-fluid">
+            <h1 id="jdl" class="text-left">Add Category</h1>
+            <div id="desc" class="btn-group float-right">
+                <button type="button" class="btn btn-outline-info text-right"><i class="fa fa-plus"></i>  Add New<br/> Category</button>
+                <button type="button" class="btn btn-outline-danger"><i class="fa fa-times"></i>  Remove <br/> Category</button>
+            </div>
+            <table id="catg" class="table table-hover table-sm table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width: 10%" class="text-center" scope="col"><input type="checkbox" onclick="toggle(this)"></th>
+                        <th style="width: 60%" scope="col">Category Name</th>
+                        <th style="width: 30%" scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="text-center" scope="row"><input type="checkbox" name="catg" value="bar1"></th>
+                        <td>Tas</td>
+                        <td>
+                            <a href=""><div class="badge badge-pill badge-success"><i class="fa fa-plus"></i>  Add Root</div></a> &nbsp;
+                            <a href=""><div class="badge badge-pill badge-info"><i class="fa fa-pencil-square-o"></i>  Rename Category</div></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-center" scope="row"><input type="checkbox" name="catg" value="bar2"></th>
+                        <td>Jaket</td>
+                        <td>
+                            <a href=""><div class="badge badge-pill badge-success"><i class="fa fa-plus"></i>  Add Root</div></a> &nbsp;
+                            <a href=""><div class="badge badge-pill badge-info"><i class="fa fa-pencil-square-o"></i>  Rename Category</div></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-center" scope="row"><input type="checkbox" name="catg" value="bar3"></th>
+                        <td>Helm</td>
+                        <td>
+                            <a href=""><div class="badge badge-pill badge-success"><i class="fa fa-plus"></i>  Add Root</div></a> &nbsp;
+                            <a href=""><div class="badge badge-pill badge-info"><i class="fa fa-pencil-square-o"></i>  Rename Category</div></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <!-- End content -->
+
+    <!-- Footer -->
+    <footer class="bg-dark fixed-bottom" style="padding: 10px;">
+        Purwadhika &copy; 2018
+    </footer>
+    <!-- End footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>

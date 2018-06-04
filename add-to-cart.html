@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart-style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <title>Predo.id | Add to Cart</title>
+  </head>
+  <body>
+    <!-- Nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img id="logo" src="img/logo2.png"></a>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <div class="btn-group" id="login-button" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-success">Sign in</button>
+
+                        <button type="button" class="btn btn-outline-primary">Sign up</button>
+                      </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    <!-- Akhir nav -->
+
+    <!-- Add to cart -->
+    
+    <div class="container" id="tbcart">
+        <div class="table-responsive">
+            <table class="table table-striped table-dark table-bordered">
+                <tbody>
+                    <tr>
+                        <th>Item</th>
+                        <th>QTY</th>
+                        <th>Unit Price</th>
+                        <th>Total Price</th>
+                    </tr>
+
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td class="text-right" id="qty"><input type="number" id="editqty" style="width: 45px; padding: 1px" value="1" min="1"></td>
+                        <td class="text-right" id="price">Rp 60000</td>
+                        <td id="price_sub"></td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="3"><span class="pull-right">Sub Total</span></th>
+                        <th class="text-right" id="subtotal">Rp 60.000</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="3"><span class="pull-right">Shipping</span></th>
+                        <th class="text-right" id="shipping">Rp 9.000</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3"><span class="pull-right">Total</span></th>
+                        <th class="text-right" id="total">Rp 69.000</th>
+                    </tr>
+
+                    <tr>
+                        <td><button href="#" class="btn btn-primary">Continue</button></td>
+                        <td colspan="3"><button id="checkout" class="float-right btn btn-success">Checkout</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Akhir add to cart -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center fixed-bottom">
+        <div class="container">
+            &copy; Copyright 2018 | Purwadhika JC Batch 5
+        </div>
+    </footer>
+    <!-- Akhir footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
